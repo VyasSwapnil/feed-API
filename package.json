@@ -1,0 +1,19 @@
+{
+  "name": "feed-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VyasSwapnil/feed-API.git"
+  },
+  "author": "Swapnil Vyas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VyasSwapnil/feed-API/issues"
+  },
+  "homepage": "https://github.com/VyasSwapnil/feed-API#readme"
+}
