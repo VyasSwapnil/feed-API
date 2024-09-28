@@ -4,7 +4,7 @@ const Post = require("../models/post");
 exports.getPosts = (req, res, next) => {
   Post.find()
     .then((posts) => {
-      res.status(200).json({ message: "Fetched posts.", posts: posts });
+      res.status(200).json({ message: "Fetched posts successfully.", posts: posts });
     })
     .catch((err) => {
       if (!err.statusCode) err.statusCode = 500;
@@ -16,7 +16,7 @@ exports.createPost = (req, res, next) => {
   const errors = validationResult(req);
   if (!errors.isEmpty()) {
     const error = new Error("Validation failed, entered data is incorrect");
-    error.statusCoe = 422;
+    error.statusCode = 422;
     throw error;
   }
   if (!req.file) {
